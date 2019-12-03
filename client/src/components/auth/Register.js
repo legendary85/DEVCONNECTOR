@@ -1,7 +1,11 @@
 import React, { Fragment, useState } from "react";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { setAlert } from "../../actions/alert";
+import PropTypes from "prop-types";
 
-const Register = () => {
+// instead of using props deconstruct props ({setAlert})
+const Register = ({ setAlert }) => {
   // state = formData, function to update the state = setformData and pull form useState() hook. enter default values ({})
   const [formData, setFormData] = useState({
     // initial state
@@ -20,7 +24,9 @@ const Register = () => {
   const onSubmit = async e => {
     e.preventDefault();
     if (password !== password2) {
-      console.log("Passwords do not match");
+      // console.log("Passwords do not match");
+      // Note!!!! props.setAlert add message and alert type
+      setAlert("Passwords do not match", "danger");
     } else {
       console.log("SUCCESS");
       // Test registration within a component : we will delete and use redux
@@ -118,4 +124,10 @@ const Register = () => {
     </Fragment>
   );
 };
-export default Register;
+
+Register.prototypes = {
+  setAlert: PropTypes.func.isRequired
+};
+
+// when using connect pass in two things get the state from alert or profile or anything else would put as first parameter, Second is going to be an object with any actions you want to use this will alow us to access props do set alert.
+export default connect(null, { setAlert })(Register);
