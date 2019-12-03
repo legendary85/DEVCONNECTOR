@@ -1,5 +1,4 @@
 import { SET_ALERT, REMOVE_ALERT } from "../actions/types";
-import { defaultCipherList } from "constants";
 
 const initialState = [];
 
