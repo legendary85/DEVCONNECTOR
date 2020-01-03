@@ -1,24 +1,36 @@
-# DEVCONNECTOR
-MERN Stack application that connects Web Developers across the globe.
 
-Full stack social network application using Node.js, Express, React, Redux and MongoDB along with ES6+.
 
-Building an extensive backend API with Node.js & Express
 
-Protecting routes/endpoints with JWT (JSON Web Tokens)
+# DEVFRIENDS
+
+
+# What is DEVFRIENDS?
+DEVFRIENDS is a networking tool that connects software engineers from all over. Users can create an account, login, make posts and leave comments.
+
+# Description , Technologies & Concepts 
+Full stack application using Node.js, Express, React, Redux and MongoDB along with ES6+.
+
+Built an extensive backend API with Node.js & Express
+
+Protected routes/endpoints with JWT (JSON Web Tokens)
 
 Extensive API testing with Postman
 
-Integrating React with our backend in an elegant way, creating a great workflow
+Integrated React with our backend in an elegant way, creating a great workflow
 
-Building our frontend to work with the API
+Built the frontend to work with the API
 
-Using Redux for app state management
+Used Redux for app state management
 
-Creating reducers and actions for our resources
+Created reducers and actions for the resources
 
-Creating many container components that integrate with Redux
+Created many container components that integrate with Redux
 
-Testing with the Redux Chrome extension
+Tested with the Redux Chrome extension
 
-Creating a build script, securing our keys and deploy to Heroku using Git
+Created a build script, securing  keys and deployed to Heroku using Git
+
+ ## Demo
+ [Click here to view the demo](https://drive.google.com/file/d/11OUwHhTvBUChRolw-ifjw_wNTX-g8Lw2/view)
+
+## Screen Shots
